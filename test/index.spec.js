@@ -8,19 +8,19 @@ const nockFixtureDirectory = path.resolve(__dirname, './fixtures');
 const fixturesFilename = 'usersFixtures.json';
 
 describe('GET followers', function() {
+  let nockFinish;
+
   before(function(done) {
     const nockBackOptions = {};
     nock.back.fixtures = nockFixtureDirectory;
     nock.back(fixturesFilename, nockBackOptions, function (nockDone) {
-      this.nockDone = function () {
-        nockDone();
-      };
+      nockFinish = nockDone;
       done();
-    }.bind(this));
+    });
   });
 
   after(function() {
-    this.nockDone();
+    nockFinish();
   });
 
   it('returns users followers', function(done) {
