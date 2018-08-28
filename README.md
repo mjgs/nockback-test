@@ -15,7 +15,7 @@ The advantage of implementing it yourself rather than use a seperate npm module 
     
     npm run record
 
-There should be 2 fixture files created in the fixtures folder.
+There should be 2 fixture files created in the fixtures folder (internet connection required).
 
 ## Run the tests:
 
@@ -23,7 +23,7 @@ There should be 2 fixture files created in the fixtures folder.
 
 This will run the tests against the api and then against the mocks so you can see the difference.
 
-1) Against the live api (2-3 seconds)
+1) Against the live api (2-3 seconds) - internet connection required
 2) Against the nock mocks (30-40 milliseconds)
 
 There are npm scripts in package.json to run the tests individually as well.
