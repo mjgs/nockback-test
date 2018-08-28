@@ -9,8 +9,9 @@ const fixturesFilename = 'searchFixtures.json';
 
 describe('GET search', function() {
   before(function(done) {
+    const nockBackOptions = {};
     nock.back.fixtures = nockFixtureDirectory;
-    nock.back(fixturesFilename, function (nockDone) {
+    nock.back(fixturesFilename, nockBackOptions, function (nockDone) {
       this.nockDone = function () {
         nockDone();
       };
