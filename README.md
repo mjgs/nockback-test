@@ -2,6 +2,10 @@
 
 Expands on the example in [this tutorial](https://semaphoreci.com/community/tutorials/mocking-external-http-requests-in-node-tests-with-nock) to try to achieve seperate nock fixture files.
 
+Install modules:
+
+    npm install
+
 Generate the fixture files:
     
     npm run record
