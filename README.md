@@ -1,7 +1,7 @@
 # nockback-test
 
 Expands on the example in [this tutorial](https://semaphoreci.com/community/tutorials/mocking-external-http-requests-in-node-tests-with-nock) that shows how to use nock to mock the github api.
-This implementation uses the nockback feature to record the fixtures into seperate files. You can then run the tests against the nock mocks rather then the api.
+This implementation uses the nockback feature to record the fixtures into seperate files. You can then run the tests against the nock mocks rather than the api.
 
 Uses similar technique to the [nock-back-mocha](https://github.com/porchdotcom/nock-back-mocha) module, but one fixture file per test file rather than per test.
 
