@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "record": "NOCK_BACK_MODE=record mocha",
-    "test": "mocha"
+    "test": "npm run test:live && npm run test:mocked",
+    "test:live": "NOCK_BACK_MODE=wild mocha",
+    "test:mocked": "unset NOCK_BACK_MODE; mocha"
   },
   "author": "",
   "license": "ISC",
