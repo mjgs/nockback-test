@@ -1,6 +1,5 @@
 const expect = require('chai').expect;
 const nock = require('nock');
-const nockBack = nock.back;
 const path = require('path');
 
 const searchRepositories = require('../lib/search').searchRepositories;
